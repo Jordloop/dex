@@ -8,6 +8,8 @@ import { SearchMovieApiComponent } from './components/search-movie-api/search-mo
 import { MoviesComponent } from './components/movies/movies.component';
 import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 import { MovieEditComponent } from './components/movie-edit/movie-edit.component';
+import { CollectionsComponent } from './components/collections/collections.component';
+import { CollectionsDetailComponent } from './components/collections-detail/collections-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { MovieEditComponent } from './components/movie-edit/movie-edit.component
     SearchMovieApiComponent,
     MoviesComponent,
     MovieDetailComponent,
-    MovieEditComponent
+    MovieEditComponent,
+    CollectionsComponent,
+    CollectionsDetailComponent
   ],
   imports: [
     BrowserModule
