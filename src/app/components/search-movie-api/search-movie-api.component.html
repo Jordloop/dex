@@ -1,3 +1,11 @@
 <p>
   search-movie-api works!
 </p>
+
+<form (ngSubmit)="onSubmit(movieTitle)" #movieTitle="ngForm">
+  <label for="title">Movie:</label>
+  <input type="text"  class="form-control" name="title" ngModel autofocus required>
+  <button type="submit">Search</button>
+</form>
+
+<app-movies *ngIf="movieList != null" [moviesList]="movieList"></app-movies>
