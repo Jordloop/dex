@@ -1,3 +1,14 @@
 <p>
   movies works!
 </p>
+<div *ngFor="let movie of moviesList">
+  <pre>
+    <!-- {{movie.Poster}} -->
+    {{movie.Title}}
+    {{movie.Type}}
+    {{movie.Year}}
+    <!-- {{movie.imdbID}}   -->
+  </pre>
+  <button (click)="addMovieToCoollection(movie.imdbID)">Add</button>
+  <button (click)="navigateToMovieDetail(movie.imdbID)">View Details</button>
+</div>
