@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    height: 95hv;
+    background-image: -moz-linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.8)
+        rgba(40, 180, 131, 0.8)
+    );
+    background-size: cover;
+    background-position: top;
+}
