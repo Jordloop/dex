@@ -36,8 +36,14 @@ export class MovieDetailComponent implements OnInit {
     this.omdbSvc.getMovieByImdbId(imdbID).subscribe(movie => {
       if(movie) {
         this.movie = JSON.parse(movie._body);
-        console.log(this.movie);
+
+        console.log((this.movie));
       }
     })
   }
+
+  addMovieToCollection(imdbID) {
+    console.log('movie-detail.addMovie', imdbID);
+  }
+
 }

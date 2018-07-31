@@ -1,8 +1,8 @@
 <p>
   movie-detail works!
 </p>
-<pre>
-  <img src="{{movie.Poster}}" alt="">
+<pre *ngIf="movie">
+  <img src="{{movie.Poster}}" alt="" width="200">
 Actors: {{movie.Actors}}
 Country: {{movie.Country}}
 DVD: {{movie.DVD}}
@@ -22,3 +22,5 @@ Year: {{movie.Year}}
 imdbID: {{movie.imdbID}}
 imdbRating: {{movie.imdbRating}}
 </pre>
+
+<button (click)="addMovieToCollection(movie.imdbID)">Add</button>
